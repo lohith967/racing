@@ -1,55 +1,196 @@
-<html>
+<html lang="en">
 
 <head>
-  <style>
-    body {
-      background-image: url("https://images.unsplash.com/photo-1453173267031-c4c5ace6b624?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ");
-      background-position: center;
-      background-size: cover;
-    }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/pets-and-animals-3/24/dog-love--love-heart-favorite---footprint-pet-animal--512.png" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
+    <ul>
+        <b>
+            <li class="navbar"><a href="#home">Home</a></li>
+            <li class="navbar"><a href="#about">About</a></li>
+            <li class="navbar"><a href="#video">Video</a></li>
+            <li class="navbar"><a href="#training">Training</a></li>
+            <li class="navbar"><a href="#inspiration">Inspiration</a></li>
+            <li class="navbar"><a href="#contact">Contact</a></li>
 
-    #myCanvas {
-      margin-top: 30px;
-      border-width: 10px;
-      background-color: white;
-      border-style: ridge;
-    }
 
-    h1,
-    h4 {
-      color: white !important;
-    }
-  </style>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <title>CAR RACING !!</title>
+        </b>
+    </ul>
+    <title>My favorite Animal</title>
 </head>
 
-<body onload="add();">
+<body>
+    <section id="home">
+        <h1>My favorite Animal<br>
+            <dog>A dog</dog>
+        </h1>
+        <img id="dog_pro" src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/HB4AT3D3IMI6TMPTWIZ74WAR54.jpg" height=300px onclick="bark()">
+        <br>
+        <button><a href="#about">Know more about dogs!</a></button>
+    </section>
+    <hr />
+    <section id="about">
+        <h2>Some Info About dogs</h2>
+        <div id="line"></div>
+        <p><b>There are (estimated) 360 breeds of dogs in this world .Most dogs are friendly, active, obedient and human-friendly in nature, they are the most common animals which are kept as a pet, they are also called as the "man's best friend". I like all animals but specially dogs because they are obedient and kind. Whenever I get a chance I try to feed street dogs. If I get a chance I want to buy a papillon dog, as they are friendly, really very active, hairly, they don't shed a lot and most important they are good for first-time owners</b></p>
+        
+    </section>
+    <hr />
+    <section id="video">
+        <h2>Some of the best moments of dogs</h2>
+        <iframe width="533" height="300" src="https://www.youtube.com/embed/MPV2METPeJU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <hr />
+    <section id="training">
+        <h2>How to train your dog(by Zak George)</h2>
+        <h3>How to Teach The First 7 Things To Your Dog: Sit, Leave it, Come, Leash walking, Name...)</h3>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/FG9xSgN86BM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        <button><a target="blank" href="https://www.youtube.com/c/zakgeorge/videos">Click me for more such videos</a></button>
+    </section>
+    <audio src="dogbark2.mp3" id="bark"> </audio>
+    <section id="inspiration">
+        <h2>My Inspiration</h2>
+        <a href="https://thecaninecalmer.wordpress.com/2016/03/05/5000-mastiffs/" target="blank"> <img id="kublai" src="https://quoteunquote2016.files.wordpress.com/2017/09/khan.jpg?w=700"></a>
+        <h3>Kublai Khan</h3>
+        <div id="line"></div>
+        <article><b>Kublai Khan, also known as the Emperor Shizu of Yuan, was the fifth khagan of the Mongol Empire, he had owned almost 5000 <a href="https://en.wikipedia.org/wiki/Mastiff" target="blank">mastiffs</a> (another dog breed) and also has a record of owning the most numbers of dogs no one has broken has broken his record from centuries but in this century I want to break his record and rescue and own more than 5000 dogs.</b></article>
+    </section>
+    <section id="contact">
+        <h2 id="h2">choulalohithsaireddy03@gmail.com</h2>
+        <div class="mapouter"><div class="gmap_canvas">
+            <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=4-35-414%20Madhavaram%20colony%20kukatpally%20hyderbad&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2piratebay.org"></a><br><style>.mapouter position:relative;text-align:right;height:500px;width:600px;
+        </div>
+       
+    </section>
+</body></html>
+<style>
+    html {
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
 
-  <center>
-    <h1>CAR RACING</h1>
-    <canvas id="myCanvas" width="820" height="500">
-    </canvas>
-    <h4>
-      <b class="text-danger">NOTE : </b> IF CARS ARE NOT VISIABLE PRESS ANY ARROW KEY
-    </h4>
-   
-    <P id="winner" ></P>
-   
-    
+    body {
+        text-align: center;
 
-    <script>
-      function myFunction() {
-        alert("RED CAR:  UP W , LEFT A , DOWN S , RIGHT D . WHITE CAR:  UP U , LEFT H , DOWN J , RIGHT K ");
-      }
-    </script>
-  </center>
-  <script src="main.js">
-  </script>
-</body>
+    }
 
-</html>
+    dog {
+        font-family: 'East Sea Dokdo', cursive;
+        font-size: 35px;
+    }
+
+    #dog_pro {
+        border-radius: 30%;
+        border-style: double;
+        border-width: thick;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    #home {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom right, #af97f2, #97e4f2);
+    }
+
+    p,
+    article {
+        width: 250px;
+        margin-left: 41%;
+        font-family: 'Xanh Mono', monospace;
+
+    }
+
+    #line {
+        height: 7px;
+        width: 70px;
+        background-color: darkgoldenrod;
+        margin-left: 48%;
+    }
+
+    ul {
+        font-size: 25px;
+        border-width: 2px;
+        background-color: coral;
+        position: fixed;
+        list-style: none;
+        height: 240px;
+        width: 120px;
+
+
+    }
+
+    ul:hover {
+        height: 260px;
+        width: 140px;
+    }
+
+    li {
+        text-align: center;
+        margin-top: 10px;
+        right: 10px;
+
+    }
+
+    li:hover {
+
+
+        background-color: white;
+    }
+
+    #video {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    #about,
+    #video,
+    #training,
+    #inspiration
+    {
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="28" height="49" viewBox="0 0 28 49"%3E%3Cg fill-rule="evenodd"%3E%3Cg id="hexagons" fill="%239C92AC" fill-opacity="0.4" fill-rule="nonzero"%3E%3Cpath d="M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'), linear-gradient(to bottom right, #d8fbc1, #c1c5fb);
+        width: 100%;
+        height: 105%;
+    }#contact {
+height:300px;
+background-color: crimson;
+font-family:arial black;
+color:white;
+
+    }
+
+    button {
+        height: 25px;
+        font-size: 20px;
+    }
+
+    #kublai {
+        border: 10px solid transparent;
+
+        border-image: url('http://www.freepngimg.com/download/decorative_border/34810-5-purple-border-frame-transparent-background.png') 150 round;
+
+        border-width: 50px;
+        opacity: 1;
+        border-radius: 50%;
+
+    }
+
+    #kublai:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+        border-radius: 0% !important;
+    }a{
+text-decoration-line: none;
+    }
+</style>
+<script>
+    function bark() {
+        document.getElementById("bark").play();
+    }
+
+</script>
